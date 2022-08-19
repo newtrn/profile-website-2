@@ -1,13 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700;900&display=swap');
 
 @tailwind base;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: #121039;
-  font-size: 18px;
-  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
   line-height: 28px;
-  background-color: rgb(15 23 42);
   -webkit-font-smoothing: antialiased;
+  line-height: 2;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.text-space-more {
+  letter-spacing: 3px;
+}
+
+.text-glow {
+  text-shadow: 0 0 1px #fff;
+}
+
+.text-gradient {
+  background: linear-gradient(180deg,rgba(153,16,81,1) 0%,rgba(84,38,138,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 20px;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 980px
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 720px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 500px
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 300px
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 275px
+  }
 }
