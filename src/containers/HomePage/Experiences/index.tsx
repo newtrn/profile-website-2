@@ -37,12 +37,12 @@ const Experiences = () => {
     <ExperiencesStyled>
       <div className="container">
         <div className="p-5 md:p-20 content-wrapper">
-          <div data-aos="fade-up" className="text-2xl font-semibold uppercase text-center">
+          <div data-aos="fade-up" className="text-2xl font-semibold uppercase text-center mb-14">
             {infocaption.experienceTitle}
           </div>
-          <div data-aos="fade-up" data-aos-delay="100" className="text-base mt-5 xl:mt-10 px-0 xl:px-20 mb-14 text-center">
+          {/* <div data-aos="fade-up" data-aos-delay="100" className="text-base mt-5 xl:mt-10 px-0 xl:px-20 mb-14 text-center">
             {infocaption.skillsIntro}
-          </div>
+          </div> */}
           <div data-aos="fade-up" data-aos-delay="200">
             <Slider {...settings}>
               {projects.map((project) => (

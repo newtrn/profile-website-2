@@ -24,7 +24,7 @@ const AboutMe = () => {
             <div data-aos="fade-up" data-aos-delay="100" className="text-base mb-10">
               {infocaption.introSelf}
             </div>
-            <div data-aos="fade-up" data-aos-delay="200">
+            {/* <div data-aos="fade-up" data-aos-delay="200">
               <Button
                 text={
                   <div className="flex justify-items-center items-center">
@@ -33,7 +33,7 @@ const AboutMe = () => {
                   </div>
                 }
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export const infocaption = {
   aboutMeBtnText: 'View All',
   skillsTitle: 'Area of skills',
   skillsIntro:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+    'These abilities track my job-specific duties and responsibilities. It comes from courses, vocational training, and job experiences. These also represent my working style and approach.',
   experienceTitle: 'Working experiences',
   contactMeTitle: `Let's get in touch`,
   contactMeCaption:
