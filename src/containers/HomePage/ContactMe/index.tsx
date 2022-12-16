@@ -24,16 +24,40 @@ const ContactMe = () => {
             </div>
             <div className="contact-wrapper grid">
               <div data-aos="fade-up" data-aos-delay="200">
-                <InfoBox icon={<span className="icon-mobile" />} title={infocaption.phoneTitle} text={infocaption.phoneText} />
+                <InfoBox
+                  icon={<span className="icon-mobile" />}
+                  title={infocaption.phoneTitle}
+                  text={<a href={`tel:${infocaption.phoneNumber}`}>{infocaption.phoneText}</a>}
+                />
               </div>
               <div data-aos="fade-up" data-aos-delay="300">
-                <InfoBox icon={<span className="icon-github" />} title={infocaption.githubTitle} text={infocaption.githubText} />
+                <InfoBox
+                  icon={<span className="icon-github" />}
+                  title={infocaption.githubTitle}
+                  text={
+                    <a target="_blank" href={infocaption.githubLink}>
+                      {infocaption.githubText}
+                    </a>
+                  }
+                />
               </div>
               <div data-aos="fade-up" data-aos-delay="400">
-                <InfoBox icon={<span className="icon-at" />} title={infocaption.emailTitle} text={infocaption.emailText} />
+                <InfoBox
+                  icon={<span className="icon-at" />}
+                  title={infocaption.emailTitle}
+                  text={<a href={`mailto:${infocaption.emailText}`}>{infocaption.emailText}</a>}
+                />
               </div>
               <div data-aos="fade-up" data-aos-delay="500">
-                <InfoBox icon={<span className="icon-codepen" />} title={infocaption.codepenTitle} text={infocaption.codepneText} />
+                <InfoBox
+                  icon={<span className="icon-codepen" />}
+                  title={infocaption.codepenTitle}
+                  text={
+                    <a target="_blank" href={infocaption.codepenLink}>
+                      {infocaption.codepneText}
+                    </a>
+                  }
+                />
               </div>
             </div>
           </div>

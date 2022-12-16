@@ -9,4 +9,7 @@ export default styled.div`
     border-radius: 100%;
     background-image: linear-gradient(to right, ${colors.purplePrimary}, ${colors.purpleSecondary});
   }
+  .info-wrapper div {
+    user-select: text;
+  }
 `

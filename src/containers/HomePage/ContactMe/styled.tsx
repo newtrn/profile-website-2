@@ -15,7 +15,12 @@ export default styled.div`
     .right-content {
       flex: 1;
     }
+    .left-content {
+      z-index: 1;
+      position: relative;
+    }
     .right-content {
+      z-index: 2;
       display: flex;
       flex-direction: column;
       justify-content: center;
